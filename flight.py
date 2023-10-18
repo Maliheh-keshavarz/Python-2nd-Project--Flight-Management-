@@ -23,7 +23,9 @@ class Flight:
     Methods
     -------
     __init__(self,flightNumber,origin,destination,distance): Initialize each flight with flightNumber,origin,destination,distance.
-    addPassenger:Method which allows you to add passengers to a flight and call addFlight from Passenger class to update flights list in same time
+    addPassenger(self,passenger):Method which allows you to add passengers to a flight and call addFlight from Passenger class to update flights list in same time
+    setPlane(self,airplane):Set a plane to a flight and checking its range before adding it to a flight 
+    overBooked(self):Allow to calculate overbooking based on the number of passengers 
     """
 
     def __init__(self,flightNumber,origin,destination,distance):
@@ -41,8 +43,17 @@ class Flight:
 
     def setPlane(self,airplane):
         if airplane.airplanRange >= self.distance:
+            self.airplane=airplane
             return True
         else:
             return False
+        
+    def overBooked(self):
+       
+        if len(self.passengers)>self.airplane.seats:
+            return len(self.passengers) - self.airplane.seats
+        else:
+            return 0
+
         
         

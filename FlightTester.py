@@ -105,18 +105,18 @@ if (n == 0):
 else:
     print("Flight from Toronto to Ottawa has " , n , " passengers too many.")
 
-# ######################################################  
+######################################################  
 		
-# print("(5.2)-------------------------------");
-# for p in passengers:
-#     YYZFRA.addPassenger(p)
-# n2 = YYZFRA.overBooked();
-# if n2 == 0:
-#     print("Flight from Toronto to Frankfurt has space left.")
-# else:
-#     print("Flight from Toronto to Frankfurt has " , n2 , " passengers too many.")
+print("(5.2)-------------------------------");
+for p in passengers:
+    YYZFRA.addPassenger(p)
+n2 = YYZFRA.overBooked();
+if n2 == 0:
+    print("Flight from Toronto to Frankfurt has space left.")
+else:
+    print("Flight from Toronto to Frankfurt has " , n2 , " passengers too many.")
 
-# ######################################################
+######################################################
 
 # print("(6.1)-------------------------------")		
 # if (YYZYOW.isInternational()):
