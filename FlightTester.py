@@ -6,7 +6,7 @@ Good Luck!
 
 import airport as apt
 import airplane as apn
-# import flight as fl
+import flight as fl
 # import passenger as pg
 
 
@@ -37,18 +37,18 @@ C172 = apn.Airplane("Cessna 172",1289,3)
 		
 ######################################################
 
-# print("(1.3)-------------------------------")
-# YYZFRA = fl.Flight(872,Toronto,Frankfurt,6343.66)
-# print(YYZFRA.flightNumber)
-# print(YYZFRA.origin.code)	
-# print(YYZFRA.destination.code)	
-# print(YYZFRA.distance)
-# print(YYZFRA)
+print("(1.3)-------------------------------")
+YYZFRA = fl.Flight(872,Toronto,Frankfurt,6343.66)
+print(YYZFRA.flightNumber)
+print(YYZFRA.origin.code)	
+print(YYZFRA.destination.code)	
+print(YYZFRA.distance)
+print(YYZFRA)
 
-# YYZYOW = fl.Flight(446,Toronto,Ottawa,362.08)
-# HKGYVR = fl.Flight(8,HongKong,Vancouver,10272.73)
+YYZYOW = fl.Flight(446,Toronto,Ottawa,362.08)
+HKGYVR = fl.Flight(8,HongKong,Vancouver,10272.73)
 
-# ######################################################
+######################################################
 		
 # print("(1.4)-------------------------------")
 # passengers = [pg.Passenger("Susan",111111),pg.Passenger("Tom",222222),pg.Passenger("Alice",0),pg.Passenger("Mike",333333),pg.Passenger("Peter",0)]
