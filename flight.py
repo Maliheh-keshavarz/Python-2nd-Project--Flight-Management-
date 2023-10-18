@@ -26,6 +26,7 @@ class Flight:
     addPassenger(self,passenger):Method which allows you to add passengers to a flight and call addFlight from Passenger class to update flights list in same time
     setPlane(self,airplane):Set a plane to a flight and checking its range before adding it to a flight 
     overBooked(self):Allow to calculate overbooking based on the number of passengers 
+    isInternational(self):Check whether a flight is domestic or international 
     """
 
     def __init__(self,flightNumber,origin,destination,distance):
@@ -54,6 +55,14 @@ class Flight:
             return len(self.passengers) - self.airplane.seats
         else:
             return 0
+
+
+    def isInternational(self):
+        if self.origin.country == self.destination.country:
+            return False
+        else:
+            return True
+        
 
         
         
