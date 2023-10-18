@@ -23,7 +23,7 @@ class Flight:
     Methods
     -------
     __init__(self,flightNumber,origin,destination,distance): Initialize each flight with flightNumber,origin,destination,distance.
-    addPassenger:Method of the Flight class, which allows you to add passengers to a flight 
+    addPassenger:Method which allows you to add passengers to a flight and call addFlight from Passenger class to update flights list in same time
     """
 
     def __init__(self,flightNumber,origin,destination,distance):
@@ -38,4 +38,11 @@ class Flight:
     def addPassenger(self,passenger):
         self.passengers.append(passenger)
         passenger.addFlight(self)
+
+    def setPlane(self,airplane):
+        if airplane.airplanRange >= self.distance:
+            return True
+        else:
+            return False
+        
         

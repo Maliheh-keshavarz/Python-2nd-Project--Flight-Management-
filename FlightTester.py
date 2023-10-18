@@ -89,21 +89,21 @@ else:
 
 #####################################################
 
-# print("(4.2)-------------------------------")
-# if (YYZFRA.setPlane(B787)):
-#     print("787 added successfully!")
-# else:
-#     print("The 787's range is too small. Use a different plane.")			
+print("(4.2)-------------------------------")
+if (YYZFRA.setPlane(B787)):
+    print("787 added successfully!")
+else:
+    print("The 787's range is too small. Use a different plane.")			
 
-# ######################################################
+######################################################
 
-# print("(5.1)-------------------------------")
-# YYZYOW.setPlane(C172);
-# n = YYZYOW.overBooked();
-# if (n == 0):
-#     print("Flight from Toronto to Ottawa has space left.")
-# else:
-#     print("Flight from Toronto to Ottawa has " , n , " passengers too many.")
+print("(5.1)-------------------------------")
+YYZYOW.setPlane(C172);
+n = YYZYOW.overBooked();
+if (n == 0):
+    print("Flight from Toronto to Ottawa has space left.")
+else:
+    print("Flight from Toronto to Ottawa has " , n , " passengers too many.")
 
 # ######################################################  
 		

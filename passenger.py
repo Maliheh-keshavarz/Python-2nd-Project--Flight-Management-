@@ -12,8 +12,9 @@ class Passenger:
     name:str
         name of the passenger 
     passportNumber:int
-        passport number of the passenger       
-
+        passport number of the passenger   
+    flights:list 
+        list of flights of each passenger to keep track
     Methods
     -------
     __init__(self,name,passportNumber):initialize passengers with a name and passport number. 
