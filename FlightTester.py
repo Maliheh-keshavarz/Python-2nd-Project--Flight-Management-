@@ -57,15 +57,15 @@ print(passengers[0].passportNumber)
 print(passengers[4].name)
 print(passengers[4].passportNumber)
 
-# ######################################################		
+######################################################		
 		
-# print("(2.1)-------------------------------")
-# for p in passengers: 
-#     YYZYOW.addPassenger(p)
+print("(2.1)-------------------------------")
+for p in passengers: 
+    YYZYOW.addPassenger(p)
 				
-# print("First passenger: " + YYZYOW.passengers[0].name)
+print("First passenger: " + YYZYOW.passengers[0].name)
 
-# ######################################################
+######################################################
 	
 # print("(2.2)-------------------------------")
 # print("Passenger list for flight from Toronto to Ottawa:")

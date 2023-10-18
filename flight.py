@@ -17,6 +17,8 @@ class Flight:
         The destination airport
     distance:float
         The distance between the origin and destination airports in miles.
+    passengers:list
+        Each flight stores a list of passengers.
 
     Methods
     -------
@@ -29,5 +31,7 @@ class Flight:
         self.origin= origin
         self.destination= destination
         self.distance= distance
-    
-   
+        self.passengers=[]
+
+    def addPassenger(self,passenger):
+        self.passengers.append(passenger)
