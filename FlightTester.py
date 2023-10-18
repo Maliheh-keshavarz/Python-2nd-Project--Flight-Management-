@@ -7,7 +7,7 @@ Good Luck!
 import airport as apt
 import airplane as apn
 import flight as fl
-# import passenger as pg
+import passenger as pg
 
 
 ######################################################
@@ -50,12 +50,12 @@ HKGYVR = fl.Flight(8,HongKong,Vancouver,10272.73)
 
 ######################################################
 		
-# print("(1.4)-------------------------------")
-# passengers = [pg.Passenger("Susan",111111),pg.Passenger("Tom",222222),pg.Passenger("Alice",0),pg.Passenger("Mike",333333),pg.Passenger("Peter",0)]
-# print(passengers[0].name)
-# print(passengers[0].passportNumber)
-# print(passengers[4].name)
-# print(passengers[4].passportNumber)
+print("(1.4)-------------------------------")
+passengers = [pg.Passenger("Susan",111111),pg.Passenger("Tom",222222),pg.Passenger("Alice",0),pg.Passenger("Mike",333333),pg.Passenger("Peter",0)]
+print(passengers[0].name)
+print(passengers[0].passportNumber)
+print(passengers[4].name)
+print(passengers[4].passportNumber)
 
 # ######################################################		
 		
