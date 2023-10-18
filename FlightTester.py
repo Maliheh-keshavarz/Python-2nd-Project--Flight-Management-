@@ -67,27 +67,27 @@ print("First passenger: " + YYZYOW.passengers[0].name)
 
 ######################################################
 	
-# print("(2.2)-------------------------------")
-# print("Passenger list for flight from Toronto to Ottawa:")
-# passengerList = YYZYOW.passengers
+print("(2.2)-------------------------------")
+print("Passenger list for flight from Toronto to Ottawa:")
+passengerList = YYZYOW.passengers
 
-# for p in passengerList:
-#     print(p.name)
+for p in passengerList:
+    print(p.name)
 		
-# ######################################################
+######################################################
 		
-# print("(3)-------------------------------")		
-# print("Passenger " + passengers[0].name + "'s first flight is from " + passengers[0].flights[0].origin.code + " to " + passengers[0].flights[0].destination.code + ".")
+print("(3)-------------------------------")		
+print("Passenger " + passengers[0].name + "'s first flight is from " + passengers[0].flights[0].origin.code + " to " + passengers[0].flights[0].destination.code + ".")
 	
-# ######################################################
+######################################################
 		
-# print("(4.1)-------------------------------")
-# if (YYZFRA.setPlane(A320)):
-#     print("A320 added successfully!")
-# else:
-#     print("The A320's range is too small. Use a different plane.")			
+print("(4.1)-------------------------------")
+if (YYZFRA.setPlane(A320)):
+    print("A320 added successfully!")
+else:
+    print("The A320's range is too small. Use a different plane.")			
 
-# ######################################################
+#####################################################
 
 # print("(4.2)-------------------------------")
 # if (YYZFRA.setPlane(B787)):

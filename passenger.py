@@ -17,14 +17,20 @@ class Passenger:
     Methods
     -------
     __init__(self,name,passportNumber):initialize passengers with a name and passport number. 
+    addFlight(self, flight): Add a flight to the passenger's list of flights.
     
     """
 
     def __init__(self,name,passportNumber):
         self.name= name
         self.passportNumber= passportNumber
+        self.flights=[]
         
-        
+    def addFlight(self,flight):
+        self.flights.append(flight)
+
+
+
 
    
 

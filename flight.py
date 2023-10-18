@@ -1,5 +1,5 @@
 
-
+import passenger as pg
 
 class Flight:
     """
@@ -23,7 +23,7 @@ class Flight:
     Methods
     -------
     __init__(self,flightNumber,origin,destination,distance): Initialize each flight with flightNumber,origin,destination,distance.
-    
+    addPassenger:Method of the Flight class, which allows you to add passengers to a flight 
     """
 
     def __init__(self,flightNumber,origin,destination,distance):
@@ -32,6 +32,10 @@ class Flight:
         self.destination= destination
         self.distance= distance
         self.passengers=[]
+       
+        
 
     def addPassenger(self,passenger):
         self.passengers.append(passenger)
+        passenger.addFlight(self)
+        
