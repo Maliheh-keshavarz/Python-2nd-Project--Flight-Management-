@@ -22,11 +22,18 @@ class Flight:
 
     Methods
     -------
-    __init__(self,flightNumber,origin,destination,distance): Initialize each flight with flightNumber,origin,destination,distance.
-    addPassenger(self,passenger):Method which allows you to add passengers to a flight and call addFlight from Passenger class to update flights list in same time
-    setPlane(self,airplane):Set a plane to a flight and checking its range before adding it to a flight 
-    overBooked(self):Allow to calculate overbooking based on the number of passengers 
-    isInternational(self):Check whether a flight is domestic or international 
+    __init__(self,flightNumber,origin,destination,distance): 
+        Initialize each flight with flightNumber,origin,destination,distance.
+    addPassenger(self,passenger):
+        Method which allows you to add passengers to a flight and call addFlight from Passenger class to update flights list in same time
+    setPlane(self,airplane):
+        Set a plane to a flight and checking its range before adding it to a flight 
+    overBooked(self):
+        Allow to calculate overbooking based on the number of passengers 
+    isInternational(self):
+        Check whether a flight is domestic or international 
+    noPassports(self):
+        Identify list of passengers without passports
     """
 
     def __init__(self,flightNumber,origin,destination,distance):
@@ -64,5 +71,11 @@ class Flight:
             return True
         
 
-        
+    def noPassports(self):   
+        noPassportsList=[]
+        for passenger in self.passengers:
+            if passenger.passportNumber==0:
+                noPassportsList.append(passenger)
+        return noPassportsList
+
         
