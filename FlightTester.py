@@ -43,7 +43,7 @@ print(YYZFRA.flightNumber)
 print(YYZFRA.origin.code)	
 print(YYZFRA.destination.code)	
 print(YYZFRA.distance)
-print(YYZFRA)
+print(YYZFRA)   
 
 YYZYOW = fl.Flight(446,Toronto,Ottawa,362.08)
 HKGYVR = fl.Flight(8,HongKong,Vancouver,10272.73)

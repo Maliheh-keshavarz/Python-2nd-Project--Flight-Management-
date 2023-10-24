@@ -1,5 +1,4 @@
 
-import passenger as pg
 
 class Flight:
     """
@@ -44,7 +43,9 @@ class Flight:
         self.passengers=[]
        
         
-
+    def __str__(self) -> str:
+        return (f'flightNumber{self.flightNumber} from {self.origin.code} to {self.destination.code} with distance {self.distance} km.')
+    
     def addPassenger(self,passenger):
         self.passengers.append(passenger)
         passenger.addFlight(self)
