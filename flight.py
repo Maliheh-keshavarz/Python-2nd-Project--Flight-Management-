@@ -42,9 +42,10 @@ class Flight:
         self.distance= distance
         self.passengers=[]
        
+     
         
     def __str__(self) -> str:
-        return (f'flightNumber{self.flightNumber} from {self.origin.code} to {self.destination.code} with distance {self.distance} km.')
+        return (f'Flight number {self.flightNumber} from {self.origin.code} to {self.destination.code} with distance {self.distance}km.')
     
     def addPassenger(self,passenger):
         self.passengers.append(passenger)
