@@ -33,8 +33,9 @@ class TestFlight(unittest.TestCase):
 
         
     def testsetPlane(self):
-        condition=YYZFRA.setPlane(A320)
-        self.assertFalse(condition,'def setPlane should return false')
+       
+        self.assertFalse(YYZFRA.setPlane(A320),'def setPlane should return false')
+        self.assertTrue(YYZFRA.setPlane(B787),'def setPlane should return true')
 
 
 
@@ -47,16 +48,28 @@ class TestFlight(unittest.TestCase):
 
 
     def testisInternational(self):
-        condition=YYZFRA.isInternational()
-        self.assertTrue(condition,'isInternational method should return true')
+        
+       
+        domesticFlight = YYZYOW.isInternational()
+        internationalFlight = YYZFRA.isInternational()
+        self.assertFalse(domesticFlight)
+        self.assertTrue(internationalFlight)
 
     
 
     def testnoPassports(self):
         noPassportsList =  YYZFRA.noPassports()
-        self.assertIsInstance(noPassportsList,list,'should be list')
+        expected_names = ["Alice", "Peter"]
+        for i in range(len(expected_names)):
+            self.assertEqual(noPassportsList[i].name, expected_names[i])
+        self.assertEqual(len(noPassportsList), len(expected_names))
 
 
+        # for i, name in enumerate(expected_names):
+        #     self.assertEqual(noPassportsList[i].name, name)
+        
+        
+        
 
 class TestPassenger(unittest.TestCase):
    
